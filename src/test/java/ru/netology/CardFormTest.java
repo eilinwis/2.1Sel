@@ -18,7 +18,7 @@ public class CardFormTest {
         form.$("[data-test-id=phone] input").setValue("+79270000000");
         form.$("[data-test-id=agreement]").click();
         form.$("[role=\"button\"]").click();
-        $("[class=\"Success_successBlock__2L3Cw\"]").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
+        $("[data-test-id=order-success]").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
 
     }
 
@@ -30,7 +30,7 @@ public class CardFormTest {
         form.$("[data-test-id=phone] input").setValue("+79275647892");
         form.$("[data-test-id=agreement]").click();
         form.$("[role=\"button\"]").click();
-        $("[class=\"Success_successBlock__2L3Cw\"]").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
+        $("[data-test-id=order-success]").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
 
     }
 
@@ -42,7 +42,7 @@ public class CardFormTest {
         form.$("[data-test-id=phone] input").setValue("+79278436892");
         form.$("[data-test-id=agreement]").click();
         form.$("[role=\"button\"]").click();
-        $("[class=\"Success_successBlock__2L3Cw\"]").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
+        $("[data-test-id=order-success]").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
 
     }
 
